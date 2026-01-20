@@ -1,0 +1,90 @@
+/* BASE */
+.navbar {
+  width: 100%;
+  background: #F6F5F3;
+  border-bottom: 1px solid #D8D8D8;
+}
+
+.navbar-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 24px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LOGO */
+.navbar-logo img {
+  width: 56px;
+  height: auto;
+}
+
+/* LINKS (DESKTOP) */
+.navbar-links {
+  display: flex;
+  gap: 32px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #2B2B2B;
+  position: relative;
+}
+
+/* subtle hover */
+.navbar-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #C33742;
+  transition: width 0.2s ease;
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
+}
+
+/* TOGGLE BUTTON */
+.navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #2B2B2B;
+}
+
+/* -------------------- */
+/* MOBILE */
+/* -------------------- */
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 88px;
+    right: 40px;
+    background: #EAEAEA;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+    border-radius: 16px;
+    border: 1px solid #D8D8D8;
+    display: none;
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .navbar-links a {
+    color: #2B2B2B;
+  }
+}
