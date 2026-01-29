@@ -1,41 +1,23 @@
-import "../styles/Footer.css";
+import "../styles/components/Footer.css";
 import { socials } from "../config/socials";
 
 function Footer() {
   return (
     <footer className="footer" id="footer">
       <div className="footer-container">
-
-        {/* LEFT */}
-        <div className="footer-left">
-          <img
-            src="/logo.svg"
-            alt="Logo"
-            className="footer-logo"
-          />
-
-          <p className="footer-title">Valami</p>
-        </div>
-
-        {/* RIGHT */}
         <div className="footer-links">
-
-          <div className="footer-column">
-            <h4>About Me</h4>
-            <ul>
-              <li>About</li>
-              <li>Projects</li>
-              <li>Projects</li>
-            </ul>
+          <div className="footer-column footer-contact">
+            <h4 className="footer-contact-title">Contact Me</h4>
+            <span className="footer-contact-email">pinterbence2002@gmail.com</span>
           </div>
 
           <div className="footer-column">
             <h4>Programming Languages</h4>
-            <ul>
+            <ul className="footer-skills">
               <li>C#</li>
               <li>.NET</li>
               <li>Python</li>
-              <li>Powershell</li>
+              <li>PowerShell</li>
             </ul>
           </div>
 
@@ -55,7 +37,6 @@ function Footer() {
               ))}
             </div>
           </div>
-
         </div>
       </div>
 

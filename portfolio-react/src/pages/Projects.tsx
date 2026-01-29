@@ -1,11 +1,12 @@
 import "../styles/Projects.css";
 import PortfolioIMG from '../assets/images/project-images/portfolio_temp.jpg'
+import CatsyIMG from '../assets/images/project-images/catsy.png'
 
 const projects = [
   {
-    title: "Catsy multi platform game",
-    image: "../assets/project-images/portfolio.jpg",
-    url: "https://example.com",
+    title: "Catsy",
+    image: CatsyIMG,
+    url: "https://github.com/GrofDzsepetto/Catsy",
     color: "#C33742",
   },
   {
@@ -13,12 +14,6 @@ const projects = [
     image: PortfolioIMG,
     url: "https://github.com/GrofDzsepetto/portfolioWebsite",
     color: "#2B2B2B",
-  },
-  {
-    title: "API Backend",
-    image: "../assets/images/project-images/backend.jpg",
-    url: "https://example.com",
-    color: "#4A90E2",
   },
 ];
 

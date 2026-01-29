@@ -1,6 +1,6 @@
 .projects {
   min-height: 100vh;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   padding: 120px 40px;
 }
 
@@ -24,13 +24,17 @@
 }
 
 .project-card {
-  border: 2px solid #D8D8D8;
+  border: 2px solid #d8d8d8;
   border-radius: 16px;
   overflow: hidden;
   text-decoration: none;
   color: inherit;
   background: #fff;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .project-card:hover {
@@ -40,7 +44,7 @@
 
 .project-image {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  flex: 1;
   overflow: hidden;
 }
 
@@ -49,6 +53,8 @@
   height: 100%;
   object-fit: cover;
   transition: transform 0.35s ease;
+
+  display: block;
 }
 
 .project-card:hover img {
@@ -62,6 +68,8 @@
   letter-spacing: 0.05em;
   color: #fff;
   text-align: center;
+
+  margin-top: auto;
 }
 
 /* ========================= */
