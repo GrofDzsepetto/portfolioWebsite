@@ -9,38 +9,44 @@ i18n.use(initReactI18next).init({
     resources:{
         en:{
             translation:{
+                home_title: "Benedek Pintér",
                 home_experience: "IT Trainee at Continental Automotive / Aumovio, where I gained hands-on experience across multiple fields, identified numerous system issues, and actively participated in solving real-world technical problems.",
+                home_experience_title: "Experience",
+                home_aimaster_title:"AI Master?",
                 home_aimaster: "ChatGPT is my #1 friend! With the power of our friendship we can develop at a high speed",
+                home_degree_title:"Degree",
                 home_degree: "I am currently completing my BSc in Business Informatics and plan to pursue a Master’s degree in Computer Science too deepen my understanding in programming.",
                 
                 about_hs_title:"High School",
                 about_hs:"Currently studying Business Informatics, focusing on software development, databases, and building real-world projects.",
-                
                 about_uni_title : "BSc – Business Informatics",
                 about_uni: "Currently studying Business Informatics, focusing on software development, databases, and building real-world projects.",
-                
                 about_work_title: "IT Trainee – Continental Automotive / Aumovio",
                 about_work: "Hands-on experience across multiple fields, identifying system issues and contributing to real technical problem-solving.",
-
                 about_projects_title: "Personal Projects",
                 about_projects: "Building games, tools, and full-stack apps with a focus on performance, clean UI, and maintainable architecture.",
-
                 about_now_title: "Leveling Up",
                 about_now: "Continuously improving my skills, expanding my portfolio, and preparing for the next step.",
-                
                 about_tag_edu: "Education",
                 about_tag_work: "Work",
                 about_tag_proj: "Projects",
-                about_tag_now: "Current"
+                about_tag_now: "Current",
 
+                experience_conti_post: "Local IT gyakornok",
+                experience_conti_title: "Continental Hungary Kft. // Aumovio Hungary Kft.",
+                experience_conti: "Főbb feladatok: felhasználói támogatás, automatizálási szkriptek írása PowerShellben, .NET webalkalmazások fejlesztése, C# szkriptek készítése, API-k létrehozása, valamint különböző üzleti folyamatokhoz kapcsolódó",
 
 
             }
         },
         hu:{
             translation:{
+                home_title: "Pintér Benedek",
                 home_experience: "IT gyakornokként dolgoztam a Continental Automotive / Aumovio cégnél, ahol több területen is gyakorlati tapasztalatot szereztem, számos rendszerhibát azonosítottam, és aktívan részt vettem valós technikai problémák megoldásában.",
+                home_experience_title: "Tapasztalat",
+                home_aimaster_title:"AI Mester?",
                 home_aimaster: "A ChatGPT az első számú barátom! A barátságunk erejével elképesztő tempóban tudunk fejlődni és alkotni.",
+                home_degree_title:"Végzettség",
                 home_degree: "Jelenleg gazdaságinformatikus alapképzést végzek, és terveim szerint számítástechnika mesterszakon folytatom tanulmányaimat, hogy még mélyebben elmélyítsem programozási ismereteimet.",
 
                 about_hs_title: "Középiskola",

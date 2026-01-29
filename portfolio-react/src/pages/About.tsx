@@ -5,7 +5,7 @@ import '../i18n';
 import { useTranslation } from "react-i18next";
 
 export default function About() {
-  const{t, i18n} = useTranslation();
+  const{t} = useTranslation();
 
 
   const scrollerRef = useRef<HTMLDivElement | null>(null);

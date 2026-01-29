@@ -1,49 +1,38 @@
 import "../styles/Experience.css";
 
-type ExperienceCardProps = {
-  role: string;
-  company: string;
-  period: string;
-  description: string;
-};
+import '../i18n';
+import { useTranslation } from "react-i18next";
 
 export default function Experience() {
+
+    const{t} = useTranslation();
   return (
     <section className="experience">
       <div className="experience-container">
         <h1>Experience</h1>
 
-        <ExperienceCard
-          role="Software Developer"
-          company="Independent / Personal Projects"
-          period="2021 – Present"
-          description="Building games, tools, and full-stack applications using C#, .NET, MAUI, and React. Focused on performance, clean UI, and maintainable architecture."
-        />
+        <div className="experience-list">
+          <details className="exp-item" open>
+            <summary className="exp-row">
+              <div className="exp-left">
+                <div className="exp-role">{t("experience_conti_post")}</div>
+                <div className="exp-company">{t("experience_conti_title")}</div>
+              </div>
 
-        <ExperienceCard
-          role="Frontend Developer"
-          company="Portfolio & UI Projects"
-          period="2022 – Present"
-          description="Designing modern, clean interfaces using React and CSS with strong emphasis on UX and visual polish."
-        />
+              <div className="exp-right">
+                <span className="exp-period">2023 –</span>
+                <span className="exp-chevron" aria-hidden="true">▾</span>
+              </div>
+            </summary>
+
+            <div className="exp-panel">
+              <p className="exp-description">
+                {t("experience_conti")}
+              </p>
+            </div>
+          </details>
+        </div>
       </div>
     </section>
-  );
-}
-
-function ExperienceCard({ role, company, period, description }: ExperienceCardProps) {
-  return (
-    <div className="experience-card">
-      <div className="experience-header">
-        <div>
-          <h3>{role}</h3>
-          <p className="experience-company">{company}</p>
-        </div>
-
-        <span>{period}</span>
-      </div>
-
-      <p className="experience-description">{description}</p>
-    </div>
   );
 }
