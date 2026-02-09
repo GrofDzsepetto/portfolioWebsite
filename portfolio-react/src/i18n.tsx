@@ -18,7 +18,7 @@ i18n.use(initReactI18next).init({
                 home_degree: "I am currently completing my BSc in Business Informatics and plan to pursue a Master’s degree in Computer Science too deepen my understanding in programming.",
                 
                 about_hs_title:"High School",
-                about_hs:"Currently studying Business Informatics, focusing on software development, databases, and building real-world projects.",
+                about_hs:"Graduated from a German bilingual high school, where I developed strong German and English skills.",
                 about_uni_title : "BSc – Business Informatics",
                 about_uni: "Currently studying Business Informatics, focusing on software development, databases, and building real-world projects.",
                 about_work_title: "IT Trainee – Continental Automotive / Aumovio",
@@ -50,7 +50,7 @@ i18n.use(initReactI18next).init({
                 home_degree: "Jelenleg gazdaságinformatikus alapképzést végzek, és terveim szerint számítástechnika mesterszakon folytatom tanulmányaimat, hogy még mélyebben elmélyítsem programozási ismereteimet.",
 
                 about_hs_title: "Középiskola",
-                about_hs: "Megszereztem az alapokat a logikus gondolkodásban, a matematikában és a programozás iránti korai érdeklődésben.",
+                about_hs: "Német kéttannyelvű gimnáziumban végeztem, ahol erős német és angol nyelvtudásra tettem szert.",
 
                 about_uni_title: "BSc – Gazdaságinformatika",
                 about_uni: "Jelenleg gazdaságinformatikát tanulok, a szoftverfejlesztésre, adatbázisokra és valós projektek megvalósítására fókuszálva.",

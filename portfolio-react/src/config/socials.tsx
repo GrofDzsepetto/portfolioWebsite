@@ -5,7 +5,7 @@ import FacebookIcon from "../assets/images/svg/facebookIcon.svg";
 export const socials = [
   {
     name: "GitHub",
-    url: "https://github.com/GrofDzsepetto",
+    url: "https://github.com/Dzsepetto",
     icon: GitHubIcon,
   },
   {

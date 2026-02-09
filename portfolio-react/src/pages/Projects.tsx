@@ -1,6 +1,9 @@
 import "../styles/Projects.css";
-import PortfolioIMG from '../assets/images/project-images/portfolio_temp.jpg'
+import PortfolioIMG from '../assets/images/project-images/porfolio.png'
 import CatsyIMG from '../assets/images/project-images/catsy.png'
+import OnlineGamesIMG from '../assets/images/project-images/OnlineGames.png'
+import { useState } from "react";
+import "../styles/Projects.css";
 
 const projects = [
   {
@@ -15,9 +18,19 @@ const projects = [
     url: "https://github.com/GrofDzsepetto/portfolioWebsite",
     color: "#2B2B2B",
   },
+  {
+    title: "Quiz Website",
+    image: OnlineGamesIMG,
+    url: "https://github.com/GrofDzsepetto/portfolioWebsite",
+    url2: "https://www.dzsepetto.hu/",
+    color: "#2B2B2B",
+  }
 ];
 
 export default function Projects() {
+ const [activeProject, setActiveProject] = useState<number | null>(null);
+
+
   return (
     <section className="projects">
       <div className="projects-inner">
@@ -25,12 +38,12 @@ export default function Projects() {
 
         <div className="projects-grid">
           {projects.map((project, index) => (
-            <a
+            <div
               key={index}
-              href={project.url}
-              target="_blank"
-              rel="noreferrer"
               className="project-card"
+              onClick={() =>
+                setActiveProject(activeProject === index ? null : index)
+              }
             >
               <div className="project-image">
                 <img src={project.image} alt={project.title} />
@@ -42,13 +55,35 @@ export default function Projects() {
               >
                 {project.title}
               </div>
-            </a>
+
+              {/* GOMBOK */}
+              {activeProject === index && (
+                <div className="project-buttons">
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    GitHub
+                  </a>
+
+                  {project.url2 && (
+                    <a
+                      href={project.url2}
+                      target="_blank"
+                      rel="noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      Website
+                    </a>
+                  )}
+                </div>
+              )}
+            </div>
           ))}
         </div>
       </div>
     </section>
   );
 }
-
-
-
